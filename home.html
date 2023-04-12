@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Texto aleatorio</title>
+    <style>
+        html {
+            touch-action: manipulation;
+        }
+        body {
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(0deg, rgba(26,34,7,1) 0%, rgba(64,89,46,1) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h1 {
+          color: white;
+          font-size: 4rem;
+          text-align: center;
+          margin-top: 20%;
+        }
+        p {
+        color: white;
+          font-size: 40px;
+          text-align: center;
+          margin-top: 5%;
+          transition: all 0.5s ease;
+          opacity: 0;
+          word-wrap: break-word;
+        }
+        .fadeIn {
+          opacity: 1;
+          transition: opacity 0.5s ease;
+        }
+
+        .fadeOut {
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
+        @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+        }
+    </style>
+  </head>
+  <body onclick="mostrarTextoAleatorio()">
+    <p id="texto-aleatorio">Haz clic en la pantalla para mostrar un texto aleatorio</p>
+    <script>
+      var textos = [
+        "Tenés una sonrisa contagiosa y hermosa",
+        "Tus ojos son tan expresivos y bonitos",
+        "Siempre hueles bien",
+        "Tu risa es una de las cosas más bellas que he escuchado",
+        "Tienes una piel suave y delicada",
+        "Tus manos son tan elegantes y refinadas",
+        "La forma en que hablas es encantadora",
+        "Tienes un sentido del humor divertido y gracioso",
+        "Tu cabello es tan sedoso y brillante",
+        "Tu voz es suave y reconfortante",
+        "Tienes una gracia natural en todo lo que haces",
+        "Tus labios son tan suaves y besables",
+        "La forma en que te mueves es elegante y refinada",
+        "Tienes un estilo personal único y hermoso",
+        "Tu cuerpo es simplemente impresionante",
+        "Eres naturalmente atractiva sin tener que hacer mucho esfuerzo",
+        "Tienes una personalidad encantadora y cariñosa",
+        "Tu sonrisa ilumina mi día",
+        "Eres inteligente y astuta",
+        "Tienes una presencia magnética",
+        "Eres genuina y sincera en todo lo que haces",
+        "Tienes una energía positiva que es contagiosa",
+        "Tienes una forma de hacerte sentir bienvenido y cómodo",
+        "Eres comprensiva y empática",
+        "Tienes una inteligencia emocional impresionante",
+        "Tu sentido de la moda es impecable",
+        "Eres apasionada en todo lo que haces",
+        "Tienes un ingenio rápido e inteligente",
+        "Eres confiada y segura de ti misma",
+        "Tienes una belleza interior que se refleja en el exterior",
+        "Tienes una presencia elegante y sofisticada",
+        "Tienes un aura positiva y radiante",
+        "Tienes una presencia calmante y tranquilizadora",
+        "Tienes una sonrisa encantadora y dulce",
+        "Eres valiente y decidida",
+        "Eres compasiva y cariñosa",
+        "Tienes una intuición increíble",
+        "Tienes una presencia humilde y modesta",
+        "Tienes una forma única de ver el mundo",
+        "Eres atenta y considerada con los demás",
+        "Tienes un corazón amoroso y cálido",
+        "Tienes una capacidad innata de hacer que los demás se sientan importantes",
+        "Tienes una mente abierta y curiosa",
+        "Eres aventurera y atrevida",
+        "Eres naturalmente hermosa por dentro y por fuera",
+        "Tienes una presencia fuerte y decidida",
+        "Eres una persona excepcionalmente amable",
+        "Eres una persona leal y confiable",
+        "Eres una persona honesta y sincera",
+        "Eres la mejor pareja que he tenido nunca",
+        "Eres la persona más hermosa que conozco"
+      ];
+      function mostrarTextoAleatorio() {
+        var textoAleatorio = textos[Math.floor(Math.random() * textos.length)];
+        var textoAleatorioElem = document.getElementById("texto-aleatorio");
+        textoAleatorioElem.classList.remove("fadeIn");
+        textoAleatorioElem.classList.add("fadeOut");
+        setTimeout(function(){
+          textoAleatorioElem.innerHTML = textoAleatorio;
+          textoAleatorioElem.classList.remove("fadeOut");
+          textoAleatorioElem.classList.add("fadeIn");
+        }, 500);
+      }
+    </script>
+  </body>
+</html>
