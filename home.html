@@ -5,6 +5,7 @@
     <style>
         html {
             touch-action: manipulation;
+            background:linear-gradient(0deg, rgba(26,34,7,1) 0%, rgba(64,89,46,1) 100%);
         }
         body {
             height: 100vh;
@@ -23,9 +24,10 @@
         }
         p {
         color: white;
-          font-size: 40px;
+          font-size: 60px;
           text-align: center;
-          margin-top: 5%;
+          margin-left:10%;
+          margin-right: 10%;
           transition: all 0.5s ease;
           opacity: 0;
           word-wrap: break-word;
@@ -54,56 +56,45 @@
     <script>
       var textos = [
         "Tenés una sonrisa contagiosa y hermosa",
-        "Tus ojos son tan expresivos y bonitos",
+        "Tus ojos son tan bonitos",
         "Siempre hueles bien",
-        "Tu risa es una de las cosas más bellas que he escuchado",
-        "Tienes una piel suave y delicada",
-        "Tus manos son tan elegantes y refinadas",
-        "La forma en que hablas es encantadora",
-        "Tienes un sentido del humor divertido y gracioso",
-        "Tu cabello es tan sedoso y brillante",
-        "Tu voz es suave y reconfortante",
-        "Tienes una gracia natural en todo lo que haces",
-        "Tus labios son tan suaves y besables",
-        "La forma en que te mueves es elegante y refinada",
-        "Tienes un estilo personal único y hermoso",
+        "Tu sonrisa es una de las cosas más bellas que hay",
+        "Tienes una piel suave",
+        "Tus manos son perfectas",
+        "La forma en que hablas me encanta",
+        "Tenés un sentido del humor que siempre me saca una sonrisa",
+        "Tu cabello es preciosa",
+        "Te ves hermosísima con tu pelo recogido",
+        "Tu voz me calma",
+        "Tus labios son tan suaves y besables jiji",
+        "Tenés un estilo personal único y hermoso",
         "Tu cuerpo es simplemente impresionante",
-        "Eres naturalmente atractiva sin tener que hacer mucho esfuerzo",
-        "Tienes una personalidad encantadora y cariñosa",
+        "Eres naturalmente atractiva sin tener que hacer algún esfuerzo",
+        "Tienes una personalidad que me fascina",
         "Tu sonrisa ilumina mi día",
-        "Eres inteligente y astuta",
-        "Tienes una presencia magnética",
+        "Eres inteligente y brillante",
+        "Tenés una presencia mágica",
         "Eres genuina y sincera en todo lo que haces",
-        "Tienes una energía positiva que es contagiosa",
-        "Tienes una forma de hacerte sentir bienvenido y cómodo",
         "Eres comprensiva y empática",
-        "Tienes una inteligencia emocional impresionante",
-        "Tu sentido de la moda es impecable",
+        "Tenés una inteligencia emocional enserio increíble",
         "Eres apasionada en todo lo que haces",
-        "Tienes un ingenio rápido e inteligente",
-        "Eres confiada y segura de ti misma",
-        "Tienes una belleza interior que se refleja en el exterior",
-        "Tienes una presencia elegante y sofisticada",
-        "Tienes un aura positiva y radiante",
-        "Tienes una presencia calmante y tranquilizadora",
-        "Tienes una sonrisa encantadora y dulce",
+        "Tenés una belleza interior que se refleja en el exterior",
+        "El solo hecho de estar contigo me relaja y calma",
+        "Tenés una sonrisa encantadora y preciosa",
         "Eres valiente y decidida",
-        "Eres compasiva y cariñosa",
-        "Tienes una intuición increíble",
-        "Tienes una presencia humilde y modesta",
         "Tienes una forma única de ver el mundo",
         "Eres atenta y considerada con los demás",
         "Tienes un corazón amoroso y cálido",
-        "Tienes una capacidad innata de hacer que los demás se sientan importantes",
         "Tienes una mente abierta y curiosa",
         "Eres aventurera y atrevida",
         "Eres naturalmente hermosa por dentro y por fuera",
         "Tienes una presencia fuerte y decidida",
-        "Eres una persona excepcionalmente amable",
-        "Eres una persona leal y confiable",
+        "Eres una persona amable",
         "Eres una persona honesta y sincera",
         "Eres la mejor pareja que he tenido nunca",
-        "Eres la persona más hermosa que conozco"
+        "Eres la persona más hermosa que conozco",
+        "Eres mi lugar seguro",
+        "Me cambiaste la vida"
       ];
       function mostrarTextoAleatorio() {
         var textoAleatorio = textos[Math.floor(Math.random() * textos.length)];
